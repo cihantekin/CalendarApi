@@ -5,10 +5,6 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    links:
-      - "postgres:postgres"
-    environment:
-      - host=postgres
     ports:
       - "1907:80"
     depends_on:
@@ -24,7 +20,7 @@ services:
     volumes:
       - postgres:/data/postgres
     ports:
-      - "5439:5439"
+      - "15432:5432"
     networks:
       - postgres
     restart: unless-stopped
