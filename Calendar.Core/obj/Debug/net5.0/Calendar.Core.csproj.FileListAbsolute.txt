@@ -1,0 +1,12 @@
+C:\Projects\Calendar\Calendar.Core\bin\Debug\net5.0\Calendar.Core.deps.json
+C:\Projects\Calendar\Calendar.Core\bin\Debug\net5.0\Calendar.Core.dll
+C:\Projects\Calendar\Calendar.Core\bin\Debug\net5.0\ref\Calendar.Core.dll
+C:\Projects\Calendar\Calendar.Core\bin\Debug\net5.0\Calendar.Core.pdb
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.csproj.AssemblyReference.cache
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.AssemblyInfoInputs.cache
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.AssemblyInfo.cs
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.csproj.CoreCompileInputs.cache
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.dll
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\ref\Calendar.Core.dll
+C:\Projects\Calendar\Calendar.Core\obj\Debug\net5.0\Calendar.Core.pdb
