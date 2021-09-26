@@ -16,7 +16,26 @@ services:
     environment:
       POSTGRES_USER: "postgres"
       POSTGRES_PASSWORD: "cihan8"
+    volumes:
+      - postgres:/data/postgres    
     ports:
       - "15432:5432"
     restart: always
-    
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_PASSWORD: cihan8
+      POSTGRES_USER: postgres
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "${PGADMIN_PORT:-5050}:80"
+    restart: unless-stopped
+volumes:
+  postgres:
+  pgadmin:
