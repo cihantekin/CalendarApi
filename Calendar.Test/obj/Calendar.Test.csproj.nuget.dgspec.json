@@ -54,6 +54,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[6.2.0, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[10.3.3, )"
             }
           },
           "imports": [

@@ -1,53 +1,22 @@
-version: "3.4"
+version: '3.5'
+
 services:
   calendar-api:
     container_name: calendar-api
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: 
+        context: ./
+        dockerfile: Dockerfile
     ports:
-      - "1907:80"
-    depends_on:
-      - postgres
-  postgres:
-    container_name: postgres
-    image: postgres
+      - "8050:80"
+    depends_on: 
+      - "postgresdb"
+  postgresdb:
+    container_name: calendarDb
+    image: "postgres"
     environment:
       POSTGRES_USER: "postgres"
-      POSTGRES_PASSWORD: cihan8
-      PGDATA: /data/postgres
-      POSGRES_DB: "CalendarDb"
-    volumes:
-      - postgres:/data/postgres
+      POSTGRES_PASSWORD: "cihan8"
     ports:
       - "15432:5432"
-    networks:
-      - postgres
-    restart: unless-stopped
-
-  pgadmin:
-    container_name: pgadmin
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
-      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
-      PGADMIN_CONFIG_SERVER_MODE: "False"
-      POSTGRES_HOST_AUTH_METHOD: trust
-      POSTGRES_PASSWORD: cihan8
-      POSTGRES_USER: postgres
-    volumes:
-      - pgadmin:/var/lib/pgadmin
-
-    ports:
-      - "${PGADMIN_PORT:-5050}:80"
-    networks:
-      - postgres
-    restart: unless-stopped
-
-networks:
-  postgres:
-    driver: bridge
-
-volumes:
-  postgres:
-  pgadmin:
+    restart: always
+    

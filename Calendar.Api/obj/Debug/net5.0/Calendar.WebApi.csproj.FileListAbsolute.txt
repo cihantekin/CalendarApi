@@ -46,3 +46,6 @@ C:\Projects\Calendar\Calendar.Api\obj\Debug\net5.0\Calendar.WebApi.dll
 C:\Projects\Calendar\Calendar.Api\obj\Debug\net5.0\ref\Calendar.WebApi.dll
 C:\Projects\Calendar\Calendar.Api\obj\Debug\net5.0\Calendar.WebApi.pdb
 C:\Projects\Calendar\Calendar.Api\obj\Debug\net5.0\Calendar.WebApi.genruntimeconfig.cache
+C:\Projects\Calendar\Calendar.Api\bin\Debug\net5.0\FluentValidation.dll
+C:\Projects\Calendar\Calendar.Api\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
+C:\Projects\Calendar\Calendar.Api\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll

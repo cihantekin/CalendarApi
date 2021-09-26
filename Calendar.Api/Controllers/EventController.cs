@@ -31,7 +31,6 @@ namespace Calendar.WebApi.Controllers
         public async Task<IActionResult> Get([Required] Guid id)
         {
             var response = await _eventService.GetEvent(id);
-
             return Ok(response);
         }
 
@@ -50,11 +49,7 @@ namespace Calendar.WebApi.Controllers
         public async Task<IActionResult> GetByOrganizer(string eventOrganizer)
         {
             var response = await _eventService.GetEventsByOrganizer(eventOrganizer);
-            if (!response.Any())
-            {
-                return NotFound();
-            }
-            return Ok(response.OrderByDescending(x => x.Time));
+            return Ok(response);
         }
 
         [HttpPost]

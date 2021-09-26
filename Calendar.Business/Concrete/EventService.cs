@@ -111,7 +111,7 @@ namespace Calendar.Business.Concrete
                     Organizer = x.Organizer,
                     Time = x.Time,
                     MemberNames = x.Members?.Select(s => s.Name)
-                }).ToList();
+                }).OrderByDescending(x => x.Time).ToList();
             }
 
             return eventList;

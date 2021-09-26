@@ -8,7 +8,7 @@ namespace Calendar.DataAccess
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("User ID=postgres;Password=cihan8;Server=localhost;Port=5432;Database=CalendarDb;Integrated Security=true", opt =>
+            optionsBuilder.UseNpgsql("User ID=postgres;Password=cihan8;Host=postgresdb;Port=5432;Database=CalendarDb;Integrated Security=true", opt =>
             {
                 opt.CommandTimeout(60_000);
             });
