@@ -1,4 +1,4 @@
-# Keesing Tech TEST CASE Calendar Api
+# Calendar Api
 
 http://localhost:8050/swagger/index.html you can test API from this link.
 
